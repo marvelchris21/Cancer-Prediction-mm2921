@@ -6,3 +6,4 @@ __pycache__/
 .env
 venvTest/
 dist
+.pre-commit-config.yaml
