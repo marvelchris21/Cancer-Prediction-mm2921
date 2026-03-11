@@ -1,0 +1,34 @@
+[project]
+name = "cancer_predictions_mm2921"
+authors = [{name = "MarvelManoharan"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.3.1",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.7.5",
+    "numpy>=1.24.4",
+    "pandas>=2.0.3",
+    "scikit-learn>=1.3.2",
+    "streamlit>=1.55.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "flake8>=5.0.4",
+    "isort>=5.13.2",
+]
+
+
+
+[project.scripts]
+cancer-prediction = "cancer_prediction_mm2921.scripts.app:cli"
+train = "cancer_prediction_mm2921.scripts.app:train"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
