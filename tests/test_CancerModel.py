@@ -1,5 +1,5 @@
 import unittest
-from cancer_predictions import cancer_model
+from cancer_prediction_mm2921 import cancer_model
 
 class TestCancerModel(unnitest.TestCase):
     def test_diagnosis_to_target():

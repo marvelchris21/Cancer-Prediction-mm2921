@@ -1,0 +1,14 @@
+
+site_name: Cancer Prediction
+site_url: https://github.com/<marvelchris1>/cancer-prediction-<mm2921>
+repo_url: https://github.com/<marvelchris1>/cancer-prediction-<mm2921>
+nav:
+  - Home: index.md
+  - cancer-prediction:
+    - cancer model: cancer-prediction-2921/cancer_model.md
+    - streamlit app: cancer-prediction-2921/streamlit_app.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for file changes
